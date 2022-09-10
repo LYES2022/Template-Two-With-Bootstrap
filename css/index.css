@@ -1,0 +1,440 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --darkColor: #19283F;
+    --greenColor: #33D1CC;
+    --redColor: #FF3150;
+    --yellowColor: #FFC400;
+    --sectionColor: #EFF7FA;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+.navbar {
+    position: fixed;
+    z-index: 23;
+    background-color: white;
+    width: 100%;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+.navbar-nav .nav-item .active {
+    color: blue;
+}
+.navbar-toggler[aria-expanded="true"] {
+    border: 1px solid green;
+}
+/* ***************** start get started *********************/
+.get-started {
+    background-image: url(../img/cover_1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+}
+.get-started::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #0833BA;
+    background: linear-gradient(#092cbfb8 50%, #03a9f4b3 62%);
+}
+
+.get-started .btn {
+    background: linear-gradient(to right, #03a9f4c9 20%, #092cbf 80% );
+    opacity: 0;
+    border: none;
+    position: absolute;
+    left: 50%;
+    bottom: 4rem;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transition: 0.2s linear;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+@media (max-width: 767px) {
+    .btn {
+        bottom: 1rem;
+    }
+}
+.btn.trans {
+    bottom: 8rem;
+    opacity: 1;
+}
+.get-started .container .content h2 {
+    font-size: 75px;
+    margin-bottom: 35px;
+}
+@media (max-width: 991px) {
+    .get-started .container .content h2 {
+        font-size: 45px;
+    }
+}
+.get-started .container .content a {
+    border: none;
+    background: linear-gradient(to right, #03a9f4c9 20%, #092cbf 80% );
+}
+.get-started .container .content a:hover {
+
+}
+/******************* end get started *********************/
+/******************* start our services *********************/
+.spacial::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 5px;
+    background: linear-gradient(to right, #03a9f4c9 20%, #092cbf 80% );
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.our-services .container .row .col-cont .text {
+    margin-top: 5rem;
+}
+.our-services .container .row .col-cont svg {
+    color: white;
+    font-size: 3rem;    
+}
+.our-services .container .row .wid {
+    background: linear-gradient(to right, #03a9f4c9 20%, #092cbf 80% );
+    width: 116px;
+    height: 116px;
+    padding: 25px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -58px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.our-services .col-cont img {
+    transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    -o-transform: scale(0.1);
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    opacity: 0;
+}
+.our-services .col-cont img.skew-col {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+/******************* end our services *********************/
+/******************* start our video *********************/
+.our-video {
+    background: url(../img/cover_3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding-bottom: 5rem;
+}
+.our-video .wise {
+    opacity: 0;
+    bottom: -3rem;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
+.our-video .wise.wise-ani {
+    opacity: 1;
+    bottom: 0rem;
+}
+.our-video::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#092cbfb8 50%, #03a9f4b3 62%);    
+}
+.our-video .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #03a9f4c9 20%, #092cbf 80% );
+    font-size: 30px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.features .row svg {
+    color: blue;
+    font-size: 3.5rem;
+}
+.features .feat-cont,
+.blog .feat-cont,
+.contact .feat-cont,
+.contact .container .row {
+    bottom: -4rem;
+    opacity: 0;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+}
+.features .feat-cont.feat-ani,
+.blog .feat-cont.feat-ani,
+.contact .feat-cont.feat-ani,
+.contact .container .row.feat-ani {
+    bottom: 0rem;
+    opacity: 1;
+}
+.features .row {
+    overflow: hidden;
+}
+.features .row .col-cont.one,
+.features .row .col-cont.two {
+    bottom: -42rem;
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+}
+.features .row .col-cont.one.feat-anime-top {
+    bottom: 0rem;
+}
+.features .row .col-cont.two.feat-anime-bot {
+    bottom: 0rem;
+}
+.features .row .col-cont:nth-child(4).feat-anime-top, 
+.features .row .col-cont:nth-child(5).feat-anime-top, 
+.features .row .col-cont:last-child.feat-anime-top {
+    bottom: 0;
+}
+/******************* end our video *********************/
+/******************* start stat *********************/
+.stat {
+    background-image: url(../img/cover_2.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.stat::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#092cbfb8 50%, #03a9f4b3 62%);        
+}
+.stat .row {
+    bottom: -5rem;
+    opacity: 0;
+    transition: 0.4s linear;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
+}
+.stat .row.Row-anime {
+    bottom: 0;
+    opacity: 1;
+}
+/******************* end stat *********************/
+/******************* start testimonials *********************/
+.our-testimonials img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.our-testimonials .row {
+    overflow: hidden;
+}
+.our-testimonials .testi-content .box {
+    box-shadow: 0px 13px 15px 5px #7777771f;
+    margin-bottom: 30px;
+}
+.our-testimonials .header {
+    border-bottom: 1px solid #7777771a;;
+}
+.our-testimonials .icon svg:not(:last-child) {
+    color: #FFA500;
+    margin-right: 10px;
+}
+.our-testimonials .icon svg:last-child {
+
+}
+.our-testimonials .row .one,
+.blog .row .blog-cont.blog,
+.our-testimonials .row .two {
+    bottom: -10rem;
+}
+.our-testimonials .row .one.our-anime-top, 
+.blog .row .blog-cont.blog-anime, 
+.our-testimonials .row .two.our-anime-bot {
+    animation: botToLeft 0.5s linear both alternate;
+    -webkit-animation: botToLeft 0.5s linear both alternate;
+}
+@keyframes botToLeft {
+    0% {
+        bottom: -10rem;
+    }
+    80% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+/******************* end testimonials *********************/
+/******************* start our blog *********************/
+.blog span {
+    cursor: pointer;
+    transition: 0.1s linear;
+    -webkit-transition: 0.1s linear;
+    -moz-transition: 0.1s linear;
+    -ms-transition: 0.1s linear;
+    -o-transition: 0.1s linear;
+}
+.blog .row span:hover {
+    color: #0E0FB4;
+}
+.blog .row {
+    overflow: hidden;
+}
+.blog .row .blog-cont {
+    bottom: -10rem;
+}
+/******************* end our blog *********************/
+/******************* start contact *********************/
+.contact {
+    background-image: url(../img/cover_3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 8rem;
+}
+.contact::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#092cbfb8 50%, #03a9f4b3 67%);            
+}
+.contact .contact-cont {
+    width: 500px;
+    background-color: red;
+}
+.contact input,
+.contact textarea {
+    background-color: transparent;
+    border: 1px solid #ffffff9c;
+    caret-color: white;
+}
+.contact textarea {
+    min-height: 300px;
+}
+.contact input:focus,
+.contact textarea:focus {
+    outline: none;
+    border-color: white;
+    box-shadow: 0px 0px 4px 4px #0000ffba;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+    color: white;
+    font-weight: 600;
+}
+@media (max-width: 767px) {
+    .contact input.one,
+    .contact input.two {
+        width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .contact input.one,
+    .contact input.two {
+        width: 95%;
+    }
+}
+.contact .row {
+    width: 800px;
+    max-width: 100%;
+
+}
+/* .contact input.one,
+.contact input.two {
+    width: 95%;
+} */
+.contact .btn-last {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5rem;
+    transition: 0.3s linear;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    -ms-transition: 0.3s linear;
+    -o-transition: 0.3s linear;
+    border: none;
+    background: linear-gradient(to right, #03a9f4c9 20%, #092cbf 80% );
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.contact .btn-last:hover {
+    bottom: -4.5rem;
+}
+footer {
+    background: linear-gradient(to right, #03a9f4c9 20%, #092cbf 80% );
+}
+footer .name:hover {
+    color: red;
+}
+footer a {
+    color: transparent;
+}
+
+/******************* end contact *********************/
